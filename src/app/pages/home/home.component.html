@@ -1,0 +1,24 @@
+<section class="bg-banner position-relative  py-5 text-center">
+    <div class="black-overlay position-absolute top-0 start-0 h-100 w-100 px-5 d-flex flex-column align-items-center justify-content-center">
+      <div class="container d-flex flex-column justify-content-center align-items-center mx-auto">
+        <h1 class="text-white fs-1">Movie Website</h1>
+      </div>
+    </div>
+
+</section>
+
+<div class="contain mt-3 mb-5 p-4">
+
+  <!-- trending movies  -->
+  <div class="row">
+    <h5 class="text-white">Trending Movies</h5>
+    <div class="rowposter mt-3 p-2">
+      <ng-container *ngFor="let t of trendingMovieResult">
+        <img src="https://image.tmdb.org/t/p/original/{{ t.poster_path }}" class="rowimg largeposter" alt="..."
+          [routerLink]="['/movie',t.id]">
+      </ng-container>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,143 @@
+<section class="my-5 container py-3">
+  <h1 class="text-center text-white">Movie List</h1>
+
+  <div class="row mt-4">
+    <h5 class="text-white">Action Movies</h5>
+    <div class="row movie-grid mt-3 p-2">
+      <ng-container *ngFor="let a of actionMovieResult">
+        <div class="col-lg-2">
+          <div class="rounded movie-card overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+                [routerLink]="['/movie', a.id]" />
+              <div class="overlay">
+               <h5 class="text-white">{{a.title}}</h5>
+                <a class="btn btn-danger " [routerLink]="['/movie', a.id]">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <h5 class="text-white">adventure Movies</h5>
+    <div class="row mt-3 p-2 movie-grid">
+      <ng-container *ngFor="let a of adventureMovieResult">
+        <div class="col-lg-2">
+          <div class="rounded movie-card overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+                [routerLink]="['/movie', a.id]" />
+              <div class="overlay">
+               <h5 class="text-white">{{a.title}}</h5>
+                <a class="btn btn-danger " [routerLink]="['/movie', a.id]">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <h5 class="text-white">Animation Movies</h5>
+    <div class="row movie-grid mt-3 p-2">
+      <ng-container *ngFor="let a of animationMovieResult">
+        <div class="col-lg-2">
+          <div class="rounded movie-card overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+                [routerLink]="['/movie', a.id]" />
+              <div class="overlay">
+               <h5 class="text-white">{{a.title}}</h5>
+                <a class="btn btn-danger " [routerLink]="['/movie', a.id]">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <h5 class="text-white">Comedy Movies</h5>
+    <div class="row movie-grid mt-3 p-2">
+      <ng-container *ngFor="let c of comedyMovieResult">
+        <div class="col-lg-2">
+          <div class="rounded movie-card overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img src="https://image.tmdb.org/t/p/original/{{ c.poster_path }}" class="rowimg largeposter" alt="..."
+                [routerLink]="['/movie', c.id]" />
+              <div class="overlay">
+               <h5 class="text-white">{{c.title}}</h5>
+                <a class="btn btn-danger " [routerLink]="['/movie', c.id]">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <h5 class="text-white">Documentary Movies</h5>
+    <div class="row movie-grid mt-3 p-2">
+      <ng-container *ngFor="let d of documentaryMovieResult">
+          <div class="col-lg-2">
+            <div class="rounded movie-card overflow-hidden">
+              <div class="position-relative overflow-hidden">
+                <img src="https://image.tmdb.org/t/p/original/{{ d.poster_path }}" class="rowimg largeposter" alt="..."
+                  [routerLink]="['/movie', d.id]" />
+                <div class="overlay">
+                 <h5 class="text-white">{{d.title}}</h5>
+                  <a class="btn btn-danger " [routerLink]="['/movie', d.id]">View </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <h5 class="text-white">Science-Fiction Movies</h5>
+    <div class="row movie-grid mt-3 p-2">
+      <ng-container *ngFor="let sf of sciencefictionMovieResult">
+        <div class="col-lg-2">
+          <div class="rounded movie-card overflow-hidden">
+            <div class="position-relative overflow-hidden">
+              <img src="https://image.tmdb.org/t/p/original/{{ sf.poster_path }}" class="rowimg largeposter" alt="..."
+                [routerLink]="['/movie', sf.id]" />
+              <div class="overlay">
+               <h5 class="text-white">{{sf.title}}</h5>
+                <a class="btn btn-danger " [routerLink]="['/movie', sf.id]">View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <h5 class="text-white">Thriller Movies</h5>
+    <div class="row movie-grid mt-3 p-2">
+      <ng-container *ngFor="let th of thrillerMovieResult">
+          <div class="col-lg-2">
+            <div class="rounded movie-card overflow-hidden">
+              <div class="position-relative overflow-hidden">
+                <img src="https://image.tmdb.org/t/p/original/{{ th.poster_path }}" class="rowimg largeposter" alt="..."
+                  [routerLink]="['/movie', th.id]" />
+                <div class="overlay">
+                 <h5 class="text-white">{{th.title}}</h5>
+                  <a class="btn btn-danger " [routerLink]="['/movie', th.id]">View </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ng-container>
+    </div>
+  </div>
+</section>

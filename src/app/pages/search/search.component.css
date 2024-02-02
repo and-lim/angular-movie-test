@@ -1,0 +1,27 @@
+button {
+    background-color: #E50914;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #E50914;
+    color: #ffffff;
+}
+
+.contain{
+    min-height: 100vh !important;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+}
+
+h5 {
+    color: #ffffff;
+}
+
+.search-container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
